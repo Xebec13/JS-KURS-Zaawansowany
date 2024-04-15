@@ -1,11 +1,11 @@
 class SafeConstructor {
     constructor(name) {
-        if (this instanceof SafeConstructor== false) {
+        if (this instanceof SafeConstructor == false) {
             return new SafeConstructor(name)
         }
         this.name = name;
     }
-    showConstructor(){
+    showConstructor() {
         return `To jest nazwa konstruktora ${this.name}`
     }
 }
@@ -16,8 +16,8 @@ console.log(constructor.showConstructor());
 
 
 
-function Constructor(name){
-    if (this instanceof SafeConstructor== false) {
+function Constructor(name) {
+    if (this instanceof SafeConstructor == false) {
         return new SafeConstructor(name)
     }
     this.name = name;
