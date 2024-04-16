@@ -35,4 +35,3 @@ let car1 = new Car("Ford","Mustang","Andrzej")
 let car2 = new Car("Marshal","Maniek","Janusz")
 console.log(car1.showInfo());
 console.log(car2.showInfo());
-as
