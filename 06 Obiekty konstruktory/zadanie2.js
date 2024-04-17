@@ -17,7 +17,7 @@ console.log(constructor.showConstructor());
 
 
 function Constructor(name) {
-    if (this instanceof SafeConstructor == false) {
+    if (this instanceof SafeConstructor === false) {
         return new SafeConstructor(name)
     }
     this.name = name;
