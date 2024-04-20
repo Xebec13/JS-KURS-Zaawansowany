@@ -1,10 +1,10 @@
 function convertToWrapper(arg) {
-    if (typeof (arg) === "number") {
+    if (typeof arg === "number") {
         return new Number(arg);
-    } if (typeof (arg) === "string") {
+    } if (typeof arg === "string") {
         return new String(arg);
     }
-    if (typeof (arg) === "boolean") {
+    if (typeof arg === "boolean") {
         return new Boolean(arg);
     }
 }
