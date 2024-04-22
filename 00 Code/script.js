@@ -12,9 +12,8 @@ console.log("-------------------------------------------");
 
 
 //   console.log(reversed1("Hello!"));
-
+console.log("-------------------------------------------");
 // funkcja ktora ma sumowac podane do tablicy numery.
-
 function sumArray(array) {
     if (array.length === 0 || !array) {
         return 0
@@ -59,7 +58,7 @@ console.log(arrayDiff([4, 2, 2, 2, 2], [2])); // Output: [1, 3]
 //     return a.filter(e => !b.includes(e));
 //   }
 console.log("--------------------------------------------------------");
-// kazda podala liczba musi zostac zwrocona w stingu 12 = "10 + 2"
+// kazda podana liczba musi zostac zwrocona w stingu 12 = "10 + 2"
 
 
 function expandedForm(num) {
