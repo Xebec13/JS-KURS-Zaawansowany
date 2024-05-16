@@ -5,7 +5,7 @@ function bindToContext(fn,context){
 let animal = {
     sound:"woof",
     makeSound: function(){
-        return `This animal makes a ${this.sound} sound`
+        return `This animal makes a ${sound} sound`
     }
 }
 let boundMakeSound = bindToContext(animal.makeSound,animal)
