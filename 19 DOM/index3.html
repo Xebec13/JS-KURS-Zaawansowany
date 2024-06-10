@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <input type="text" value="content">
+    <textarea name="" id="" cols="8" rows="8"></textarea>
+
+    <script>
+        const input = document.querySelector('input')
+        input.value = "Hello World!"
+
+        const area = document.querySelector('textarea')
+        area.value = "Content text...."
+
+
+        input.addEventListener('input', event => {
+            console.log(event.target);
+            console.log(event.target.value);
+        });
+
+
+        area.addEventListener('input', event => {
+            console.log(event.target);
+            console.log(event.target.value);
+        });
+
+
+
+
+    </script>
+
+</body>
+
+</html>

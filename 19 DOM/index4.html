@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eum vero enim aliquid obcaecati impedit sequi earum, ullam laudantium incidunt.</p>
+
+    <script>
+        let p = document.getElementsByTagName('p')[0];
+
+        p.addEventListener('mouseenter', event => {
+            console.log('mouseenter');
+        })
+
+        p.addEventListener('mouseleave', event => {
+            console.log('mouseleave');
+        })
+
+        p.addEventListener('mousemove', event => {
+            console.log('mousemove');
+        })
+    </script>
+
+
+</body>
+</html>

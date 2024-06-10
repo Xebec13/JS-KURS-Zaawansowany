@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        let p = document.createElement('p')
+        p.innerHTML = "Click me!"
+        
+        document.getElementsByTagName('body')[0].appendChild(p)
+        document.addEventListener("click",(event) =>{
+            console.log(event);
+            console.log(event.clientX, event.clientY);
+        });
+
+        p.addEventListener('click', event =>{
+            console.log("p click");
+            
+        })
+
+    </script>
+</body>
+</html>

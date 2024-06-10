@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <h1 id="name"></h1>
+    <p id="height"></p>
+    <p id="mass"></p>
+    <p id="hair_color"></p>
+    <p id="skin_color"></p>
+    <script>
+        const url = 'https://swapi.dev/api/people/4/';
+        fetch(url)
+            .then(response => response.json())
+            .then(showData)
+
+        function showData(data) {
+            console.log(data);
+            document.getElementById('name').textContent = 'Name: ' + data.name;
+            document.getElementById('height').textContent = 'Height: ' + data.height;
+            document.getElementById('mass').textContent = 'Mass: ' + data.mass;
+            document.getElementById('hair_color').textContent = 'Hair Color: ' + data.hair_color;
+            document.getElementById('skin_color').textContent = 'Skin Color: ' + data.skin_color;
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -145,3 +145,10 @@ console.log(boolToWord(false));
 //     return bool ? 'Yes':'No';
 //   }
 console.log('--------------------------------------------------------------------------');
+
+function solution3(str, ending) {
+    return str.endsWith(ending);
+};
+
+console.log(solution3("Dupsko", "upsko"));
+console.log('--------------------------------------------------------------------------');
